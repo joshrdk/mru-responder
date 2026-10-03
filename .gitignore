@@ -1,0 +1,29 @@
+# Secrets and config — never commit credentials
+.env
+.env.*
+*.key
+*.pem
+serviceAccount*.json
+google-services.json
+GoogleService-Info.plist
+
+# Real unit data — never commit rosters, member records or reports
+/data/
+*-roster.csv
+*-members.csv
+*-hours.csv
+*.sqlite
+*.db
+
+# Dependencies and builds
+node_modules/
+dist/
+build/
+.cache/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
